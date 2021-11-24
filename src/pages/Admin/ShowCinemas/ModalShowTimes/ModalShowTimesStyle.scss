@@ -1,0 +1,59 @@
+.showTimeAm {
+  .showTimeAm__content {
+    height: 380px;
+    overflow-y: scroll;
+    table {
+      thead {
+        tr {
+          th {
+            font-weight: 700;
+            &:nth-of-type(2) {
+              display: none;
+              @media screen and (min-width: 576px) {
+                display: table-cell;
+              }
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &:nth-of-type(2) {
+              display: none;
+              @media screen and (min-width: 576px) {
+                display: table-cell;
+              }
+            }
+            &:nth-of-type(4) {
+              width: 42%;
+              text-align: center;
+              @media screen and (min-width: 576px) {
+                width: 35%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ant-modal-root {
+  .ant-modal-wrap {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-body {
+          padding: 0 24px;
+          position: relative;
+        }
+        .ant-modal-footer {
+          button {
+            &:nth-of-type(2) {
+              min-width: max-content;
+            }
+          }
+        }
+      }
+    }
+  }
+}

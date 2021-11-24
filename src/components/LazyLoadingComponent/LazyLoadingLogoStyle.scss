@@ -1,0 +1,114 @@
+.lazyLogo {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  //   background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  .lazyLogo__detail {
+    width: 290px;
+    height: 290px;
+    margin: auto;
+    background: linear-gradient(
+      to bottom,
+      #000000be,
+      #ec7632bb,
+      #fbbd619a,
+      #121212b9,
+      #00000086
+    );
+    border-radius: 50%;
+
+    animation: tranlate-to-middle 1s forwards;
+  }
+  .lazyLogo__detailOff {
+    animation: tranlate-to-right 1s forwards;
+  }
+}
+@keyframes cross-rotate-cw {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes cross-rotate-ccw {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//
+@keyframes tranlate-to-middle {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+//
+@keyframes tranlate-to-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+//
+@keyframes animationShip {
+  0% {
+    bottom: 50%;
+  }
+  50% {
+    bottom: 48%;
+  }
+  100% {
+    bottom: 50%;
+  }
+}
+@keyframes animationShipItem {
+  0% {
+    padding-bottom: 0px;
+  }
+  50% {
+    padding-bottom: 4px;
+  }
+  100% {
+    padding-bottom: 0px;
+  }
+}
+@keyframes scaleLogo {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

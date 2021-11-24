@@ -1,0 +1,50 @@
+.findShowTimeAdmin {
+  border: 3px solid #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  //   width: max-content;
+  form {
+    .findShowTimeAdmin__item {
+      label {
+        display: block;
+        // font-weight: 700;
+      }
+      button {
+        width: max-content;
+        height: 35px;
+        border-radius: 3px;
+        border: none;
+        background: linear-gradient(to right, #fbbd61, #ec7532);
+        letter-spacing: 3px;
+        font-size: 0.9rem;
+        color: white;
+        padding: 0 20px;
+        transition: all 0.5s;
+        overflow: hidden;
+        position: relative;
+        &::after {
+          content: "";
+          width: 0;
+          height: 100%;
+          position: absolute;
+          bottom: 0;
+          left: -15px;
+          transform: skewX(30deg);
+          background-color: #ec7532;
+          transition: all 0.5s;
+          z-index: 0;
+        }
+        &:hover::after {
+          width: 140%;
+        }
+        span {
+          position: relative;
+          z-index: 1;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

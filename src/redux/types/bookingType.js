@@ -1,0 +1,8 @@
+// type normal
+export const GET_LIST_CHAIR_CINEMA = "GET_LIST_CHAIR_CINEMA";
+export const CHOICE_CHAIR = "CHOICE_CHAIR";
+export const BOOKING_TICKET = "BOOKING_TICKET";
+
+// type saga
+export const GET_LIST_CHAIR_CINEMA_SAGA = "GET_LIST_CHAIR_CINEMA_SAGA";
+export const BOOKING_TICKET_SAGA = "BOOKING_TICKET_SAGA";

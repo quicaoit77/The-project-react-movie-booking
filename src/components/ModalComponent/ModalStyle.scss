@@ -1,0 +1,95 @@
+.modal__black {
+  .ant-modal-close {
+    color: #d9d9d9;
+  }
+  .ant-modal-header {
+    background: linear-gradient(to bottom right, #4c4c4c, #323232, #000000);
+    position: relative;
+    border-bottom: 1px solid #323232;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to left, #fbbd61, #ec7532);
+    }
+    .ant-modal-title {
+      color: #d9d9d9;
+    }
+  }
+  .ant-modal-content {
+    .ant-modal-body {
+      background: linear-gradient(to bottom right, #4c4c4c, #323232, #000000);
+    }
+    .ant-modal-footer {
+      //   background-color: #4c4c4c;
+      background: linear-gradient(to bottom right, #323232, #4c4c4c);
+
+      position: relative;
+      border-top: 1px solid #323232;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #fbbd61, #ec7532);
+      }
+    }
+  }
+}
+.modal__gray {
+  .ant-modal-close {
+    color: #d9d9d9;
+  }
+  .ant-modal-header {
+    background: linear-gradient(to bottom right, #666666, #4c4c4c);
+
+    position: relative;
+    border-bottom: 1px solid #323232;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to left, #fbbd61, #ec7532);
+    }
+    .ant-modal-title {
+      color: #d9d9d9;
+    }
+  }
+  .ant-modal-content {
+    .ant-modal-body {
+      background: linear-gradient(
+        to bottom right,
+        #323232,
+        #666666,
+        #7f7f7f,
+        #323232
+      );
+    }
+    .ant-modal-footer {
+      //   background-color: #4c4c4c;
+      background: linear-gradient(to bottom right, #666666, #4c4c4c);
+
+      position: relative;
+      border-top: 1px solid #323232;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #fbbd61, #ec7532);
+      }
+    }
+  }
+}

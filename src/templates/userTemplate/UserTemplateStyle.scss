@@ -1,0 +1,23 @@
+.template__user {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/img/wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  .template__userContent {
+    background: linear-gradient(
+      to bottom left,
+      rgba(0, 0, 0, 0.85),
+      #ec76329a,
+      rgba(0, 0, 0, 0.651),
+      #fbbd61a8
+    );
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

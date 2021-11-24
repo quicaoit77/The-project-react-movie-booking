@@ -1,0 +1,14 @@
+.loadingItem {
+  width: 50%;
+  margin: auto;
+  .loadingItem__content {
+    animation: animationShipItem 1s infinite forwards;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      box-shadow: none !important;
+      display: block !important;
+    }
+  }
+}

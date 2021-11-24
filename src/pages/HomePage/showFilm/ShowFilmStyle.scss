@@ -1,0 +1,101 @@
+//newIn === showFilm
+.showFilm {
+  padding-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.874);
+  box-shadow: 0 10px 40px 6px black;
+  //   box-shadow: black -10px 25px 50px -4px;
+
+  .showFilm__content {
+    // width: 100%;
+    max-width: 1366px;
+    padding: 0 10px;
+    @media screen and(min-width: 992px) {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .showFilm__title {
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+      position: relative;
+      &::after {
+        content: "";
+        width: 12%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to right, #fbbd61, #ec7532);
+      }
+      h2 {
+        font-size: 1.2rem;
+        color: #ec7532;
+        margin: 0;
+      }
+    }
+    .showFilm__carousel {
+      padding: 50px 0 70px;
+      @media screen and (min-width: 1200px) {
+        padding: 50px 0 50px;
+      }
+      .slick-slider {
+        .slick-list {
+          .slick-track {
+            .slick-slide {
+            }
+            .slick-cloned {
+            }
+          }
+        }
+        .slick-arrow {
+          color: #ec7532;
+          font-size: 2.2rem;
+          position: absolute;
+          &::before {
+            display: none;
+          }
+        }
+        .slick-dots {
+          bottom: -45px;
+          li {
+            width: 10px;
+            height: 10px;
+            button {
+              &::before {
+                font-size: 15px;
+                padding: 0;
+                margin: 0;
+
+                color: #4c4c4c;
+              }
+            }
+          }
+          .slick-active {
+            button {
+              &::before {
+                color: #ec7532;
+              }
+            }
+          }
+        }
+        .slick-prev {
+          top: 40%;
+          z-index: 10;
+          left: -5%;
+        }
+        .slick-next {
+          top: 40%;
+          z-index: 10;
+          right: -5%;
+        }
+        .slick-disabled {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}

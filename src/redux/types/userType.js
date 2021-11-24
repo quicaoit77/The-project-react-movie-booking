@@ -1,0 +1,19 @@
+// type normal
+export const POST_USER_LOGIN = "POST_USER_LOGIN";
+export const POST_USER_BOSS = "POST_USER_BOSS";
+export const POST_USER_INFO = "POST_USER_INFO";
+export const DEL_USER_LOGIN = "DEL_USER_LOGIN";
+export const POST_NEW_USER = "POST_NEW_USER";
+export const POST_UPDATE_USER = "POST_UPDATE_USER";
+export const GET_LIST_USER = "GET_LIST_USER";
+export const DEL_LIST_USER = "DEL_LIST_USER";
+export const GET_USER_BOSS = "GET_USER_BOSS";
+
+// type saga
+export const POST_USER_LOGIN_SAGA = "POST_USER_LOGIN_SAGA";
+export const POST_USER_INFO_SAGA = "POST_USER_INFO_SAGA";
+export const POST_NEW_USER_SAGA = "POST_NEW_USER_SAGA";
+export const POST_NEW_USER_ADMIN_SAGA = "POST_NEW_USER_ADMIN_SAGA";
+export const GET_LIST_USER_SAGA = "GET_LIST_USER_SAGA";
+export const POST_UPDATE_USER_SAGA = "POST_UPDATE_USER_SAGA";
+export const DEL_USER_SAGA = "DEL_USER_SAGA";

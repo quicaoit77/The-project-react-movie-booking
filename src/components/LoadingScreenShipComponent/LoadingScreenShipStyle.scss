@@ -1,0 +1,18 @@
+.loadingScreenShip {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  .loadingScreenShip__Sun {
+    width: 100%;
+    animation: cross-rotate-ccw 2s infinite linear;
+    //   box-shadow: 0 0 10px black;
+  }
+  .loadingScreenShip__Ship {
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    animation: animationShip 1.5s infinite forwards;
+  }
+}

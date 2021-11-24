@@ -1,0 +1,26 @@
+.editUser {
+  padding: 10px 0;
+  .form-group {
+    input {
+      display: block;
+      height: 32px;
+      &:focus {
+        box-shadow: none;
+        border: 1px solid #d9d9d9;
+      }
+    }
+    .ant-select {
+      display: block;
+      width: 100% !important;
+    }
+
+    label {
+      margin-right: 20px;
+    }
+    .editUser__validate {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #ec7532;
+    }
+  }
+}

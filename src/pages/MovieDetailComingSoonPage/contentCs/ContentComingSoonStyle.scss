@@ -1,0 +1,111 @@
+.contentFilmCs {
+  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.874);
+  .contentFilmCs__content {
+    max-width: 1366px;
+    padding: 0 10px;
+    @media screen and(min-width: 992px) {
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .row {
+      .contentFilmCs__title {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+        position: relative;
+        &::after {
+          content: "";
+          width: 12%;
+          height: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(to right, #fbbd61, #ec7532);
+        }
+        h2 {
+          font-size: 1.2rem;
+          color: #ec7532;
+          margin: 0;
+        }
+      }
+      .contentFilmCs__Synopsis {
+        .contentFilmCs__detail {
+          color: white;
+          padding: 50px 0;
+          .row {
+            .contentFilmCs__img {
+              img {
+                width: 100%;
+                height: 290px;
+                object-fit: cover;
+                border-radius: 5px;
+                box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.692);
+              }
+              .contentFilmCs__errorImg {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.692);
+                border-radius: 5px;
+                background: linear-gradient(
+                  to bottom,
+                  // #000000be,
+                  #ec7632,
+                  #fbbd61,
+                  #191919,
+                  #000000
+                );
+                height: 290px;
+              }
+            }
+            .contentFilmCs__text {
+              padding: 20px;
+              @media screen and( min-width: 992px) {
+                padding: 0 20px;
+              }
+              h6 {
+                color: white;
+                font-size: 1.5rem;
+                border-bottom: 2px solid #ec7532;
+                width: max-content;
+                padding-bottom: 2px;
+              }
+              p {
+              }
+              table {
+                color: white;
+                tr {
+                  border: hidden;
+                  td {
+                    padding: 5px 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .contentFilmCs__viewingTimes {
+        .contentFilmCs__detail {
+          color: white;
+          padding: 50px 0;
+          h2 {
+            text-align: center;
+            box-shadow: inset 0 0 30px black;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            background: linear-gradient(to right, #fbbd61, #ec7532);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

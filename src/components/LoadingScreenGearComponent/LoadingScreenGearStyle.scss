@@ -1,0 +1,13 @@
+.loadingScreenGear {
+  width: 70%;
+  margin: auto;
+  .col-4 {
+    margin: 0;
+    padding: 0;
+    animation: cross-rotate-cw 1s infinite forwards;
+    img {
+      width: 100%;
+    }
+  }
+  animation: cross-rotate-ccw 2s infinite forwards;
+}

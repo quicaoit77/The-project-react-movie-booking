@@ -1,0 +1,119 @@
+.myBanner {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.884);
+  box-shadow: 0 10px 60px 6px black;
+  @media screen and (min-width: 1200px) {
+    height: 75vh;
+  }
+  .myBanner__img {
+    height: 100%;
+    background-position: top;
+    background-size: cover;
+
+    .myBanner__banner {
+      background: linear-gradient(
+        to bottom left,
+        rgba(0, 0, 0, 0.85),
+        #ec763286,
+        rgba(0, 0, 0, 0.45),
+        #fbbd61a8
+      );
+
+      height: 100%;
+      border-radius: 1px;
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+      .myBanner__content {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        animation: zoomText 1s 0s forwards;
+        @media screen and(min-width: 992px) {
+          width: 100%;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding-top: 100px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        h5 {
+          color: white;
+          font-size: 2.3rem;
+          font-weight: 300;
+          letter-spacing: 3px;
+          @media screen and(min-width: 576px) {
+            font-size: 2.5rem;
+          }
+          @media screen and(min-width: 768px) {
+            font-size: 3rem;
+          }
+          @media screen and(min-width: 1200px) {
+            font-size: 3.3rem;
+          }
+        }
+        p {
+          width: 95%;
+          @media screen and (min-width: 768px) {
+            width: 70%;
+          }
+        }
+        .myBanner__btn {
+          button {
+            width: 200px;
+            height: 50px;
+            border-radius: 40px;
+            border: none;
+            background: linear-gradient(to right, #fbbd61, #ec7532);
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            color: white;
+            margin-left: 10px;
+            transition: all 0.5s;
+            overflow: hidden;
+            position: relative;
+            &::after {
+              content: "";
+              width: 0;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              left: -15px;
+              transform: skewX(30deg);
+              background-color: #ec7532;
+              transition: all 0.5s;
+              z-index: 0;
+            }
+            &:hover::after {
+              width: 140%;
+            }
+            span {
+              position: relative;
+              z-index: 1;
+              i {
+                margin-right: 5px;
+              }
+            }
+          }
+          .myBanner__score {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border: 2px solid #ec7532;
+            border-radius: 50%;
+            margin-left: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

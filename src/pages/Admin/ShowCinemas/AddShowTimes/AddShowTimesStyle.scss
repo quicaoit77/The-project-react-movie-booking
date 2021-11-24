@@ -1,0 +1,71 @@
+.addShowTimes {
+  //   background-color: white;
+  padding: 10px 0;
+  width: 100%;
+  .addShowTimes__Content {
+    width: 100%;
+    form {
+      .addShowTimes__validate {
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: #ec7532;
+      }
+      .form-group {
+        margin: 0;
+        padding-bottom: 10px;
+        width: 100%;
+
+        label {
+          //   font-size: 1rem;
+          margin: 0 20px 0 0;
+          padding-right: 5px;
+        }
+        .ant-input-number {
+          height: 32px;
+          display: block;
+        }
+        .ant-picker {
+          width: 100%;
+        }
+        .ant-select {
+          width: 100% !important;
+          .ant-select-selector {
+            &:hover {
+              border: 1px solid #d9d9d9;
+            }
+          }
+        }
+        .ant-select-focused {
+          .ant-select-selector {
+            box-shadow: none;
+            border: 1px solid #d9d9d9;
+          }
+        }
+        .ant-picker {
+          height: 32px;
+          &:hover {
+            border: 1px solid #d9d9d9;
+          }
+        }
+        .ant-picker-focused {
+          box-shadow: none;
+          border: 1px solid #d9d9d9;
+        }
+        input {
+          height: 32px;
+        }
+      }
+    }
+  }
+}
+.ant-select-dropdown {
+  background-color: #4c4c4c;
+}
+.ant-picker-dropdown {
+  .ant-picker-datetime-panel {
+    flex-direction: column;
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+    }
+  }
+}

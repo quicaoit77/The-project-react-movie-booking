@@ -1,0 +1,12 @@
+.deleteUser__content {
+  display: none;
+  @media screen and(min-width:576px) {
+    display: block;
+  }
+}
+.deleteUser__contentMobi {
+  display: block;
+  @media screen and(min-width:576px) {
+    display: none;
+  }
+}

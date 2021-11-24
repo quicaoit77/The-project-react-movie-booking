@@ -1,0 +1,69 @@
+header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+header .header__content {
+  text-align: right;
+}
+.header__content .header__top a {
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
+  font-size: 0.9rem;
+}
+
+.header__content .header__top a:first-of-type {
+  border-right: 1px dotted white;
+}
+
+.header__bot #navbarMovie li {
+  padding: 10px 10px;
+  border-bottom: 1px solid gray;
+  position: relative;
+}
+.header__bot #navbarMovie li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.header__bot #navbarMovie li:hover::after {
+  width: 100%;
+}
+.header__bot #navbarMovie li a {
+  letter-spacing: 3px;
+  color: white;
+}
+.header__bot #navbarMovie .active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.header__bot #navbarMovie .dropdown-menu {
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  font-size: 0.8rem;
+  display: block;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.header__bot #navbarMovie .dropdown:hover .dropdown-menu {
+  z-index: 10;
+  transform: scale(1);
+  opacity: 1;
+}
+.header__bot #navbarMovie .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+}

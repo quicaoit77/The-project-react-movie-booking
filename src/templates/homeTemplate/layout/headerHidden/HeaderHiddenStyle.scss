@@ -1,0 +1,123 @@
+.navbarhidden {
+  background: linear-gradient(
+    to bottom right,
+    #191919ee,
+    #323232ec,
+    #323232ec,
+    #191919ee
+  );
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+  z-index: 999;
+  padding: 10px 0;
+  top: -100px;
+  animation: unActivetHeaderHidden 0.3s ease-out forwards;
+  display: none;
+
+  .navbarhidden__overlay {
+    .navbarhidden__content {
+      @media screen and(min-width: 992px) {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .navbar {
+        .navbar-brand {
+          text-align: left;
+          margin-left: 10px;
+
+          img {
+            width: 40%;
+            @media screen and (min-width: 1200px) {
+              width: 40%;
+            }
+          }
+        }
+        .navbar-toggler {
+          text-align: center;
+          color: #ec7532;
+          margin-right: 10px;
+        }
+        .navbar-collapse,
+        #navbarMovie {
+          background-color: rgba(0, 0, 0, 0.849);
+          @media screen and(min-width: 768px) {
+            background-color: transparent;
+          }
+          .navbar-nav {
+            .nav-item {
+              padding: 10px 10px;
+              position: relative;
+              @media screen and (min-width: 768px) {
+                // border-bottom: 1px solid gray;
+              }
+              &::after {
+                content: "";
+                width: 0%;
+                height: 2px;
+                display: block;
+                background: linear-gradient(to right, #fbbd61, #ec7532);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 0.5s;
+              }
+              &:hover::after {
+                width: 100%;
+              }
+              .nav-link {
+                letter-spacing: 3px;
+                color: white;
+                font-size: 1rem;
+                @media screen and (min-width: 768px) {
+                  font-size: 0.9rem;
+                }
+                @media screen and (min-width: 992px) {
+                  font-size: 1rem;
+                }
+              }
+              .active__Link {
+                &::after {
+                  content: "";
+                  width: 100%;
+                  height: 2px;
+                  display: block;
+                  background: linear-gradient(to right, #fbbd61, #ec7532);
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  transition: all 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.navbarhidden__active {
+  animation: activetHeaderHidden 0.3s ease-out forwards;
+  top: 0;
+  display: block;
+}
+
+@keyframes activetHeaderHidden {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes unActivetHeaderHidden {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100;
+  }
+}

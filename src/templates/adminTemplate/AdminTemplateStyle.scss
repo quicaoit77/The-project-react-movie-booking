@@ -1,0 +1,194 @@
+.adminTemplate {
+  display: none;
+  @media screen and(min-width: 576px) {
+    display: flex;
+  }
+  .ant-layout-sider {
+    background-color: #191919;
+    box-shadow: 0 0 10px black;
+    .ant-layout-sider-children {
+      .logo {
+        text-align: center;
+        padding: 10px 0;
+        img {
+          width: 50%;
+          object-fit: cover;
+        }
+      }
+      .ant-menu {
+        background-color: #323232;
+        .ant-menu-item {
+          .ant-menu-title-content {
+            a {
+              text-decoration: none;
+              i {
+                padding-right: 35px;
+              }
+              span {
+              }
+            }
+          }
+        }
+        .ant-menu-item-selected {
+          background: linear-gradient(to right, #fbbd61, #ec7532);
+          .ant-menu-title-content {
+            a {
+              i {
+                color: black;
+              }
+              span {
+                color: black;
+              }
+            }
+          }
+        }
+        .ant-menu-submenu {
+        }
+        .ant-menu-submenu-inline {
+        }
+      }
+    }
+    .ant-layout-sider-trigger {
+      background: linear-gradient(to right, #191919, #fbbd61, #ec7532);
+      pointer-events: none;
+      @media screen and(min-width: 992px) {
+        pointer-events: all;
+      }
+
+      span {
+        color: black;
+      }
+    }
+  }
+  .site-layout {
+    width: 100% !important;
+    .ant-layout-header {
+      background: linear-gradient(to right, #191919, #fbbd61, #ec7532, #191919);
+      box-shadow: 10px 0 10px black;
+      //   background-color: #323232;
+      position: relative;
+      width: 100%;
+      .admin__User {
+        position: absolute;
+        right: 0;
+        top: 0;
+        a {
+          text-decoration: none;
+          color: white;
+          padding: 0 15px;
+          font-size: 0.9rem;
+          &:first-of-type {
+            border-right: 1px dotted white;
+          }
+        }
+      }
+    }
+    .ant-layout-content {
+    }
+    .ant-layout-footer {
+      padding: 14px 0;
+      box-shadow: 0 -2px 10px black;
+      background: linear-gradient(to right, #ec7532, #fbbd61, #191919);
+
+      &::before {
+        display: none;
+      }
+      a {
+        color: black;
+        font-weight: 900;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.adminTemplate__mobi {
+  display: flex;
+  @media screen and(min-width: 576px) {
+    display: none;
+  }
+  .ant-layout-header {
+    background-color: #191919;
+    padding: 0;
+    height: 130px;
+    .admin__HeaderContent {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        width: 22%;
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .admin__User {
+        position: absolute;
+        right: 0;
+        top: 0;
+        a {
+          text-decoration: none;
+          color: white;
+          padding: 0 15px;
+          font-size: 0.9rem;
+          &:first-of-type {
+            border-right: 1px dotted white;
+          }
+        }
+      }
+    }
+
+    .ant-menu {
+      background-color: #191919;
+      justify-content: center;
+      z-index: 999999 !important;
+      .ant-menu-item {
+        background-color: #323232;
+        width: 25%;
+        text-align: center;
+        .ant-menu-title-content {
+          a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .ant-menu-item-selected {
+        background: linear-gradient(to right, #fbbd61, #ec7532);
+        .ant-menu-title-content {
+          a {
+            span {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ant-layout-content {
+    padding: 0 10px !important;
+  }
+  .ant-layout-footer {
+    padding: 14px 0;
+    box-shadow: 0 -2px 10px black;
+    background: linear-gradient(to right, #ec7532, #fbbd61, #191919);
+
+    &::before {
+      display: none;
+    }
+    a {
+      color: black;
+      font-weight: 900;
+      text-decoration: none;
+    }
+  }
+}
+// .site-layout {
+//   .site-layout-background {
+//     background: #fff;
+//   }
+// }

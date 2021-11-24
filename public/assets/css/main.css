@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "font-Roboto" !important;
+}
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "font-Roboto";
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "font-Roboto";
+  src: url("../fonts/RobotoCondensed-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "font-Roboto";
+  src: url("../fonts/RobotoCondensed-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "font-Roboto";
+  src: url("../fonts/RobotoCondensed-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "font-Roboto";
+  src: url("../fonts/RobotoCondensed-LightItalic.ttf");
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "font-Roboto";
+  src: url("../fonts/RobotoCondensed-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: 700;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #323232;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #fbbd61, #ec7532);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}
+.ant-notification .ant-notification-notice {
+  background: linear-gradient(to bottom right, #191919, #323232);
+  color: #fbbd61;
+  border-radius: 5px;
+}
+.ant-notification .ant-notification-notice .ant-notification-notice-message {
+  color: #ec7532;
+}
+.ant-notification .ant-notification-notice a {
+  color: #ec7532;
+}

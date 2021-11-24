@@ -1,0 +1,45 @@
+.dashboardAdmin {
+  padding: 150px 0 20px;
+  height: 100vh;
+  @media screen and(min-width: 576px) {
+    padding-top: 0px;
+    height: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    width: max-content;
+    margin: auto;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: inset 0 0 15px black;
+    @media screen and(min-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+  .dashboardAdmin__content {
+    margin-top: 45px;
+    .dashboardAdmin__detail {
+      width: 70%;
+      @media screen and(min-width: 576px) {
+        width: 45%;
+      }
+      @media screen and(min-width: 1200px) {
+        width: 25%;
+      }
+      margin: auto;
+      background: linear-gradient(
+        to top,
+        #191919,
+        #323232,
+        #4c4c4c,
+        #666666,
+        #7f7f7f
+      );
+      border-radius: 50%;
+      box-shadow: inset 0 0 30px black;
+    }
+  }
+}
