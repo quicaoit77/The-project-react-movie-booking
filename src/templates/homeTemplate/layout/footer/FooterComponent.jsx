@@ -71,13 +71,13 @@ export default function FooterComponent() {
         </div>
         <div className="footer__bot">
           <p>
-            2021 © B.Movie | Booking Ticket Website | By{" "}
-            <a
+            2021 © B.Movie | Booking Ticket Website | By Colin_Wilbus
+            {/* <a
               href="https://portfolio-colin-wilbus.vercel.app/"
               target="_blank"
             >
               Colin_Wilbus
-            </a>
+            </a> */}
           </p>
         </div>
       </div>
